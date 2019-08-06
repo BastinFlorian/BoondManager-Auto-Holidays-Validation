@@ -1,7 +1,12 @@
 # BoondManager-Auto-Holidays-Validation
 This repository allows you to validate holidays request from your employees. 
 It can be used by the human ressources of any company generating its payslip from BoonManager.
-This repository contains an executable button, such that any human ressources employee can use it once it is downloaded
+This repository contains an executable button, such that any human ressources employee can use it once it is downloaded.
+It produces a google drive spreadhsheet with one worksheet per employee with the details of the computations and allows the human ressources to accelerate their process of holiday requests.
+
+Example of output : 
+
+![](example_img_output.png)
 
 ## Getting Started
 
