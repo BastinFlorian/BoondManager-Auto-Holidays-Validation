@@ -1,0 +1,10 @@
+Nom_du_fichier_vacances_en_attente_de_validation = "./absences_en_attente_de_validation.csv"
+Nom_du_fichier_vacances_deja_validées = "./absences_validées.csv"
+Nom_du_fichier_fiches_de_paie_BeNext = "./Paies.pdf"
+Nom_du_fichier_avertissements_incohérence = "./log.txt"
+id_sheet = "669170734"
+Name_spreadsheet = "Copie de Simulateur calcul congés"
+Filename_output_pypdf = "./output.txt" 
+Filename_info_fiche_de_paie = "./conge_info_paie.csv"
+Filename_client_secret = "./client_secret.json"
+

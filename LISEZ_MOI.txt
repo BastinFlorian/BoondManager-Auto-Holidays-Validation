@@ -1,0 +1,94 @@
+Chers RH, voici un fichier texte vous présentant mon VALIDATEUR AUTOMATIQUE de vacances.
+
+----
+I. COMMENT LANCER L'ALGORITHME ?
+----
+
+1) Télécharger depuis BoondManager le document (extension .CSV - format utf-8 - option : "document Détaillé") des personnes ayant fait une demande de congés et n'étant PAS encore validées
+
+2) Télécharger depuis BoondManager le document (extension .CSV - format utf-8 - option : "document Détaillé") des personnes ayant fait une demande de congés qui ont DEJA été validées (depuis le mois en cours jusqu'à dans 5 mois)
+
+3) Télécharger le document (extension .PDF) contenant toutes les fiches de paie de BeNext
+
+4) Placer tous ces documents dans le même dossier que le fichier que vous lisez en ce moment
+
+5) Renseigner le nom des fichiers téléchargés (des étapes 1), 2) et 3)) dans le fichier RENSEIGNEZ_MOI.txt (en ajoutant "./" avant le nom du fichier)
+
+	example : j'ai téléchargé fiche_de_paie_Benext.pdf qui arrive dans mon fichier de téléchargement. Je le transfère dans le même dossier que ce fichier
+		je clique sur RENSEIGNEZ_MOI.txt et je remplace l'ancien nom de Nom_du_fichier_fiches_de_paie_BeNext par 
+		Nom_du_fichier_fiches_de_paie_BeNext = "./fiche_de_paie_Benext.pdf"
+ 
+6) Double cliquer sur le bouton LANCEZ_MOI.sh
+
+7) Accéder à google drive et visualiser les résultats
+8) Vérifier les incohérences dans le fichier log.txt (plus de détails en III) 
+
+---
+II. PARAMETRES A RENSEIGNER
+---
+
+Il faut renseigner le nom de certains fichiers téléchargés dans le fichier RENSEIGNEZ_MOI.txt : 
+
+- le nom du fichier contenant les demandes de vacances
+- le nom du fichier contenant les vacances validees 
+- le nom du fichier contenant les fiches de paies
+
+---
+III. EXPLICATIONS FICHIER LOG.TXT
+--- 
+
+Le fichier log.txt contient certaines informations : 
+
+- Une alerte si un BeNexter demande un type de congé autre que RTT et CP (mon algo ne prend pas en compte ce type de rtt, ni dans les calculs, ni dans la validation)
+- Une alerte si un BeNexter demande des CP ou RTT dans plus de 120 jours (l'algo ne prend pas en compte cette demande, ni dans les calculs, ni dans la validation)
+- Une ERROR si l'algorithme a repéré quelque chose d'anormal 
+
+---
+IV. COMMENT FONCTIONNE L'ALGORTIHME ?
+---
+
+- L'algorithme créé va chercher le nombre de CP (année N et année N-1) et RTT que le BeNexter possède. Cette information est disponible dans la fiche de paie du mois précédent le mois en cours. 
+- L'algorithme va chercher grâce au fichier extrait de BoondManager les demandes de congés VALIDES par les RH mais pas encore consommées. Ces jours n'ont pas encore été déduit dans la fiche de paie
+- Il récupère aussi les demandes de jours de congés PAS ENCORE VALIDES
+- Il crée des feuilles google sheet pour chaque BeNexter dont les congés ne sont pas encore validés et calcule si ils doivent être validés
+
+——-
+ATTENTION :
+——-
+
+- Ne pas intervertir les fichiers dans le doc RENSEIGNEZ_MOI.txt (la première ligne doit corresondre au vacances en attente de valid, la seconde à celles validées, la troisieme aux fiches de paie)
+- Si des congés ont été posés à plus de 120 jours de la date d'aujourd'hui, les jours ne sont pas pris en compte
+- Si les noms des fichiers dans RENSEIGNEZ_MOI.txt ne sont pas indiqués, erronés, ou non précédés de "./", l'algo ne marche pas
+- Le solde donné est celui anticipé sur le mois en cours 
+
+———
+SI BUG :
+———
+
+- No such file or directory : 
+	- vérifier que le nom des csv vacances validées et en attente ainsi que fiche 		de paie sont bien renseignés
+
+	- ouvrir LANCEZ_MOI.command avec « text_edit » et vérifier la première ligne 
+	« cd ~/chemin du repertoire contenant tous les fichiers »
+		example : dossier validateur_vacances stocké dans mes Documents
+		cd ~/Documents/validateur_vacances»
+		
+	
+
+
+
+
+
+
+AUTRES QUESTIONS ?
+
+Florian Bastin
+florian.bastin@benextcompany.com
+06 37 51 96 84
+
+
+
+
+
+
+
