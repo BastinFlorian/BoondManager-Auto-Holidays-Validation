@@ -1,30 +1,27 @@
 # BoondManager-Auto-Holidays-Validation
-This repository allows you to validate holidays request from your employees. 
-It can be used by the human ressources of any company generating its payslip from BoonManager.
-This repository contains an executable button, such that any human ressources employee can use it once it is downloaded.
-It produces a google drive spreadhsheet with one worksheet per employee with the details of the computations and allows the human ressources to accelerate their process of holiday requests.
+This repository allows you to validate holidays request from your employees. <br />
+It can be used by the human ressources of any company generating its payslip from BoonManager. <br />
+This repository contains an executable button, such that any human ressources employee can use it once it is downloaded. <br />
+It produces a google drive spreadhsheet with one worksheet per employee with the details of the computations and allows the human ressources to accelerate their process of holiday requests. <br />
 
-Example of output : 
+Example of output : <br />
 
 ![](example_img_output.png)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system. 
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Install pip <br />
+Install python <br />
+Install virtualenv <br />
 
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+To use this repository, you first need to create a key and save it in the "client_secret.json" file
 
 ```
 Give the example
