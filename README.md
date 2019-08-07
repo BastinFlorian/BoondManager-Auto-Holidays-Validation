@@ -1,6 +1,11 @@
 # BoondManager-Auto-Holidays-Validation
-This repository allows you to validate holidays request from your employees. <br />
-It can be used by the human ressources of any company generating its payslip from BoonManager. <br />
+
+This repository allows you to automate the holidays request from your employees having :<br />
+
+- 2.08 CP per month <br /> 
+- 0.58 RTT per month <br /> 
+
+It can be used by the human ressources of any company generating its payslip from BoondManager. <br />
 This repository contains an executable button, such that any human ressources employee can use it once it is downloaded. <br />
 It produces a google drive spreadhsheet with one worksheet per employee with the details of the computations and allows the human ressources to accelerate their process of holiday requests. <br />
 
