@@ -1,6 +1,6 @@
 Nom_du_fichier_vacances_en_attente_de_validation = "../Data/absences_en_attente_de_validation.csv"
 Nom_du_fichier_vacances_deja_validées = "../Data/absences_validées.csv"
-Nom_du_fichier_fiches_de_paie_BeNext = "..Data/Paies.pdf"
+Nom_du_fichier_fiches_de_paie_BeNext = "../Data/Paies.pdf"
 Nom_du_fichier_avertissements_incohérence = "../Infos/log.txt"
 id_sheet = "669170734"
 Name_spreadsheet = "Copie de Simulateur calcul congés"
