@@ -2,7 +2,7 @@
 
 class Config(object):
 
-    path_filenames = "../RENSEIGNEZ_MOI.txt"
+    path_filenames = "./RENSEIGNEZ_MOI.txt"
     with open(path_filenames, "r") as f:
         t = f.readlines()
     x = []

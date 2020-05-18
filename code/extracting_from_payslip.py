@@ -99,6 +99,7 @@ def extraction_rtt_conges(test):
         print(list_of_nb)
 
     # if CP N-1 taken this month
+    print(cmpt)
     try:
         if ((abs(list_of_nb[cmpt] + list_of_nb[cmpt + 1] - list_of_nb[cmpt + 2]) < 0.001)):
             Congé_N_1_solde, Congé_N_1_pris, Congé_N_1_acquis = list_of_nb[cmpt: cmpt + 3]
@@ -108,13 +109,17 @@ def extraction_rtt_conges(test):
                 Congé_N_1_solde, Congé_N_1_acquis = list_of_nb[cmpt: cmpt + 2]
 
     except Exception as e:
-        if ((abs(list_of_nb[cmpt] - list_of_nb[cmpt + 1]) < 0.001)):
-            Congé_N_1_solde, Congé_N_1_acquis = list_of_nb[cmpt: cmpt + 2]
+        try:
+            if ((abs(list_of_nb[cmpt] - list_of_nb[cmpt + 1]) < 0.001)):
+                Congé_N_1_solde, Congé_N_1_acquis = list_of_nb[cmpt: cmpt + 2]
+        except Exception as e:
+            Congé_N_1_solde, Congé_N_1_acquis = 0, 0
 
     if (Congé_N_pris > 0.001):
         Congé_N_1_pris = Congé_N_1_solde
         Congé_N_1_solde = 0
-
+    print([RTT_solde, RTT_pris, RTT_acquis, Congé_N_solde, Congé_N_pris, Congé_N_acquis, \
+            Congé_N_1_solde, Congé_N_1_pris, Congé_N_1_acquis])
     return [RTT_solde, RTT_pris, RTT_acquis, Congé_N_solde, Congé_N_pris, Congé_N_acquis, \
             Congé_N_1_solde, Congé_N_1_pris, Congé_N_1_acquis]
 
