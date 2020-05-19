@@ -34,7 +34,7 @@ https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-sp
 
 3. Create à directory Data. Get the pdf payslip of the empoloyees and save it as "Paies" in the Data directory
 
-4. Get the csv. file of holidays request from employees "absences_en_attente_de_validation.csv" and the file of holidays acceptances "absences_validees.csv" in the Data directory. <br /> 
+4. Get the csv. file of holidays request from employees "absences_en_attente_de_validation.csv" and the file of holidays acceptances "absences_validees.csv" (choose utf-8 format, detailed version in the BoondManger interface) in the Data directory. <br /> 
 These files are uploaded from BoonManager (option utf-8, detailed) <br /> (help : https://support.boondmanager.com/hc/fr/articles/205743519-G%C3%A9rer-les-demandes-d-absences)
 
 5. If the name of the files are differents from the one written in 1., 2. & 3., configure their names in RENSEIGNEZ_MOI.txt
