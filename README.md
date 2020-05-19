@@ -32,22 +32,20 @@ https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-sp
 
 2. Import the example_output.xslx file on your google drive and follow the steps of 1., specify the id_sheet in RENSEIGNEZ_MOI.txt by the id of the spreadsheet
 
-3. Get the pdf payslip of the empoloyees and save it as "Paies.pdf"
+3. Create à directory Data. Get the pdf payslip of the empoloyees and save it as "Paies" in the Data directory
 
-4. Get the csv. file of holidays request from employees "absences_en_attente_de_validation.csv" and the file of holidays acceptances "absences_validées.csv". <br /> 
+4. Get the csv. file of holidays request from employees "absences_en_attente_de_validation.csv" and the file of holidays acceptances "absences_validees.csv" in the Data directory. <br /> 
 These files are uploaded from BoonManager (option utf-8, detailed) <br /> (help : https://support.boondmanager.com/hc/fr/articles/205743519-G%C3%A9rer-les-demandes-d-absences)
 
 5. If the name of the files are differents from the one written in 1., 2. & 3., configure their names in RENSEIGNEZ_MOI.txt
 
-6. In the LANCER_MOI.command, change the first line by the path of your directory
+6. In the LANCER_MOI.command, change the first line by the path of your directory. If it does not work, open the LANCER_MOI.command as a text file and execute each line in the terminal.
 
 7. Launch the code by clicking LANCER_MOI.command button
   
 ## Authors
 
 * **Florian Bastin** - www.linkedin.com/in/florian-bastin-08940b131 - https://github.com/BastinFlorian
-* **Raphaël Beligon** - https://www.linkedin.com/in/raphael-b%C3%A9ligon-79847a82/
-* **Allan Jard** - https://www.linkedin.com/in/allan-jard-data-scientist/
 
 
 ## License
